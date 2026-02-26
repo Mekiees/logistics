@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekiees Logistics Ltd.</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <!-- Replace text logo with the new company logo image -->
+            <div class="logo">
+                <img src="images/mekiees_logo.jpg" alt="Mekiees Logistics Ltd. Logo" style="height:60px; width:auto;">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image:url('images/hero.png');">
+        <div class="overlay"></div>
+        <div class="hero-content container">
+            <h1>Delivering Your Freight With Precision &amp; Care</h1>
+            <p>We are a brokerage and logistics provider headquartered in Vancouver, connecting businesses across North America.</p>
+            <a href="#contact" class="btn btn-primary">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Freight Brokerage</h3>
+                    <p>We leverage our network of carriers to provide competitive rates and reliable freight solutions for full truckload (FTL) and less‑than‑truckload (LTL) shipments.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Temperature‑Controlled Transport</h3>
+                    <p>Specialized equipment for perishables, pharmaceuticals and other temperature‑sensitive goods ensures products arrive fresh and on time.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Cross‑Border Logistics</h3>
+                    <p>Seamless cross‑border solutions between Canada, the United States and Mexico, handling customs documentation and compliance.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Managed Transportation</h3>
+                    <p>Customized supply chain strategies, real‑time tracking, and route optimization for efficient, transparent operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>About Mekiees Logistics</h2>
+                <p>Founded on the principle that great logistics are built on trust, communication and expertise, Mekiees Logistics Ltd. helps companies move goods efficiently across North America. Our experienced brokerage team is committed to delivering tailored solutions that exceed expectations.</p>
+                <p>From our Vancouver headquarters, we coordinate a vast network of carriers and drivers, leveraging technology to provide real‑time visibility and cost‑effective transportation. Let us handle your logistics challenges so you can focus on growing your business.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/warehouse.png" alt="Logistics truck at warehouse">
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Move With Us?</h2>
+            <p>Contact Mekiees Logistics today for a customized quote or to discuss how we can streamline your supply chain.</p>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>We’re here to answer any questions and provide a quote for your transportation needs.</p>
+                <ul class="info-list">
+                    <li><strong>Phone:</strong> <a href="tel:+123655000078">(236) 550‑00078</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:info@mekiees.com">info@mekiees.com</a></li>
+                    <li><strong>Location:</strong> Vancouver, British Columbia, Canada</li>
+                    <li><strong>Company Number:</strong> 23655000078</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <!--
+                  Using FormSubmit (https://formsubmit.co) as a serverless form endpoint. When the form is submitted
+                  for the first time, FormSubmit will send a confirmation email to info@mekiees.com. After confirmation,
+                  future submissions will be emailed directly.
+                -->
+                <form action="https://formsubmit.co/info@mekiees.com" method="POST">
+                    <input type="hidden" name="_subject" value="New inquiry from Mekiees website">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>&copy; 2026 Mekiees Logistics Ltd. All rights reserved.</p>
+            <!-- Removed the Scotlynn mention for a bespoke Mekiees branding -->
+        </div>
+    </footer>
+</body>
+</html>
